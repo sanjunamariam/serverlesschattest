@@ -1,4 +1,8 @@
-var conf = {'iceServers': [{ 'url': 'stun:stun.l.google.com:19302' }]};
+var conf = {'iceServers': [{
+    url: 'turn:numb.viagenie.ca',
+    credential: 'muazkh',
+    username: 'webrtc@live.com'
+}]};
 var pc = new RTCPeerConnection(conf);
 var localStream, _fileChannel, chatEnabled,context,source,
 	_chatChannel,sendFileDom = {}, 
